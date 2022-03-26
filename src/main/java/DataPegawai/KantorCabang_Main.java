@@ -12,8 +12,8 @@ public class KantorCabang_Main {
         System.out.print("Masukkan jumlah pegawai : ");
         int jumlahPegawai = input.nextInt();
         KantorCabang kc =  new KantorCabang("B0001","Mangkukusuman","Yogyakarta");
-        Pegawai[] datapegawai = new Pegawai[KantorCabang.MAX_PEGAWAI];
-        kc.setPegawaiArray(datapegawai, jumlahPegawai);
+        Pegawai[] dataPegawai = new Pegawai[KantorCabang.MAX_PEGAWAI];
+        kc.setPegawaiArray(dataPegawai, jumlahPegawai);
         for ( int i = 0; i<jumlahPegawai; i++){
           System.out.println("\nPegawai "+(i+1));
           System.out.print("Masukkan nama :"); 
@@ -24,7 +24,7 @@ public class KantorCabang_Main {
           String department = input.next();
           System.out.print("Masukkan gaji :"); 
           int gaji = input.nextInt();
-          datapegawai [i] = new Pegawai (id,nama,department,gaji);
+          dataPegawai [i] = new Pegawai (id,nama,department,gaji);
         }
         System.out.println(kc.toString());
     }
