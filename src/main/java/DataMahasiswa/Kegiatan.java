@@ -36,5 +36,4 @@ public class Kegiatan {
         return " - Nama Kegiatan\t: "+ namaKegiatan+
                 "\n - Point\t\t: "+point;
     }
-    
 }
