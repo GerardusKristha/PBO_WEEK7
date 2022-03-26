@@ -50,5 +50,4 @@ public class Mahasiswa {
                 }
         return print;
     }
-    
 }
